@@ -1,5 +1,5 @@
 //
-//  main.swift
+//  simpleFly.swift
 //  strategyPattern
 //
 //  Created by mohsen khodadadzadeh on 7/13/18.
@@ -8,6 +8,8 @@
 
 import Foundation
 
-var angryDuck = Duck(fb: jetFly(), qb: toyDuck())
-angryDuck.fly()
-angryDuck.quack()
+class simpleFly: IflyBehavior {
+    func fly() {
+        print("Simple And Slowly fly")
+    }
+}

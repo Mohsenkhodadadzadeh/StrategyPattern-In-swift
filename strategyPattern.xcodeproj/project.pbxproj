@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		0841A96720F882AA00FCFE8A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0841A96620F882AA00FCFE8A /* main.swift */; };
+		0841A96F20F882CB00FCFE8A /* IflyBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0841A96E20F882CB00FCFE8A /* IflyBehavior.swift */; };
+		0841A97220F8892D00FCFE8A /* jetFly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0841A97120F8892D00FCFE8A /* jetFly.swift */; };
+		0841A97420F8894400FCFE8A /* simpleFly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0841A97320F8894400FCFE8A /* simpleFly.swift */; };
+		0841A97620F8897200FCFE8A /* noFly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0841A97520F8897200FCFE8A /* noFly.swift */; };
+		0841A97820F889AC00FCFE8A /* IquackBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0841A97720F889AC00FCFE8A /* IquackBehavior.swift */; };
+		0841A97B20F889E400FCFE8A /* realDuck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0841A97A20F889E400FCFE8A /* realDuck.swift */; };
+		0841A97D20F88A1000FCFE8A /* toyDuck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0841A97C20F88A1000FCFE8A /* toyDuck.swift */; };
+		0841A97F20F88A2F00FCFE8A /* Duck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0841A97E20F88A2F00FCFE8A /* Duck.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +33,14 @@
 /* Begin PBXFileReference section */
 		0841A96320F882AA00FCFE8A /* strategyPattern */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = strategyPattern; sourceTree = BUILT_PRODUCTS_DIR; };
 		0841A96620F882AA00FCFE8A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		0841A96E20F882CB00FCFE8A /* IflyBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IflyBehavior.swift; sourceTree = "<group>"; };
+		0841A97120F8892D00FCFE8A /* jetFly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jetFly.swift; sourceTree = "<group>"; };
+		0841A97320F8894400FCFE8A /* simpleFly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = simpleFly.swift; sourceTree = "<group>"; };
+		0841A97520F8897200FCFE8A /* noFly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = noFly.swift; sourceTree = "<group>"; };
+		0841A97720F889AC00FCFE8A /* IquackBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IquackBehavior.swift; sourceTree = "<group>"; };
+		0841A97A20F889E400FCFE8A /* realDuck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = realDuck.swift; sourceTree = "<group>"; };
+		0841A97C20F88A1000FCFE8A /* toyDuck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = toyDuck.swift; sourceTree = "<group>"; };
+		0841A97E20F88A2F00FCFE8A /* Duck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Duck.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +57,7 @@
 		0841A95A20F882AA00FCFE8A = {
 			isa = PBXGroup;
 			children = (
+				0841A96D20F882B200FCFE8A /* Behavior */,
 				0841A96520F882AA00FCFE8A /* strategyPattern */,
 				0841A96420F882AA00FCFE8A /* Products */,
 			);
@@ -58,8 +75,39 @@
 			isa = PBXGroup;
 			children = (
 				0841A96620F882AA00FCFE8A /* main.swift */,
+				0841A97E20F88A2F00FCFE8A /* Duck.swift */,
 			);
 			path = strategyPattern;
+			sourceTree = "<group>";
+		};
+		0841A96D20F882B200FCFE8A /* Behavior */ = {
+			isa = PBXGroup;
+			children = (
+				0841A97920F889D400FCFE8A /* quack */,
+				0841A97020F8891E00FCFE8A /* fly */,
+				0841A96E20F882CB00FCFE8A /* IflyBehavior.swift */,
+				0841A97720F889AC00FCFE8A /* IquackBehavior.swift */,
+			);
+			path = Behavior;
+			sourceTree = "<group>";
+		};
+		0841A97020F8891E00FCFE8A /* fly */ = {
+			isa = PBXGroup;
+			children = (
+				0841A97120F8892D00FCFE8A /* jetFly.swift */,
+				0841A97320F8894400FCFE8A /* simpleFly.swift */,
+				0841A97520F8897200FCFE8A /* noFly.swift */,
+			);
+			path = fly;
+			sourceTree = "<group>";
+		};
+		0841A97920F889D400FCFE8A /* quack */ = {
+			isa = PBXGroup;
+			children = (
+				0841A97A20F889E400FCFE8A /* realDuck.swift */,
+				0841A97C20F88A1000FCFE8A /* toyDuck.swift */,
+			);
+			path = quack;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,7 +168,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0841A97620F8897200FCFE8A /* noFly.swift in Sources */,
+				0841A97220F8892D00FCFE8A /* jetFly.swift in Sources */,
+				0841A97F20F88A2F00FCFE8A /* Duck.swift in Sources */,
 				0841A96720F882AA00FCFE8A /* main.swift in Sources */,
+				0841A97D20F88A1000FCFE8A /* toyDuck.swift in Sources */,
+				0841A97B20F889E400FCFE8A /* realDuck.swift in Sources */,
+				0841A97820F889AC00FCFE8A /* IquackBehavior.swift in Sources */,
+				0841A96F20F882CB00FCFE8A /* IflyBehavior.swift in Sources */,
+				0841A97420F8894400FCFE8A /* simpleFly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
